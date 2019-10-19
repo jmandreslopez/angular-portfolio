@@ -1,4 +1,4 @@
-// export * from './components';
+export * from './components';
 
 // Module
 export * from './shared.module';

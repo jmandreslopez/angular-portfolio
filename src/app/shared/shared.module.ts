@@ -12,8 +12,11 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgPipesModule } from 'ngx-pipes';
 
+// Components
+import { SocialMenuComponent } from './components';
+
 // Configs
-const LADDA_CONFIG: any = { style: 'slide-down', spinnerLines: 100 };
+import { LaddaConfig } from '@app/configs';
 
 @NgModule({
     imports: [
@@ -25,14 +28,14 @@ const LADDA_CONFIG: any = { style: 'slide-down', spinnerLines: 100 };
 
         // Vendors
         NgxErrorsModule, // @hackages/ngxerrors
-        LaddaModule.forRoot(LADDA_CONFIG), // angular2-ladda
+        LaddaModule.forRoot(LaddaConfig), // angular2-ladda
         Angulartics2Module.forRoot(), // angulartics2
         NgxPageScrollModule, // ngx-page-scroll
         NgxPageScrollCoreModule.forRoot(), // ngx-page-scroll-core
         NgPipesModule, // ngx-pipes
     ],
     declarations: [
-        //
+        SocialMenuComponent,
     ],
     exports: [
         CommonModule,
@@ -47,6 +50,9 @@ const LADDA_CONFIG: any = { style: 'slide-down', spinnerLines: 100 };
         Angulartics2Module, // angulartics2
         NgxPageScrollModule, // ngx-page-scroll
         NgPipesModule, // ngx-pipes
+
+        // Components
+        SocialMenuComponent,
     ],
     providers: []
 })

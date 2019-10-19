@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Angulartics2Module } from 'angulartics2';
 
 // Modules
+import { LayoutsModule } from '@app/layouts/layouts.module';
 import { SharedModule } from '@app/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
         Angulartics2Module.forRoot(),
 
         // App
+        LayoutsModule,
         SharedModule,
         AppRoutingModule,
     ],

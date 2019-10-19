@@ -69,7 +69,7 @@ import 'rxjs/add/operator/share';
  * ENVIRONMENT & CONFIG VARIABLES
  */
 declare const window: any;
-import { config } from './config/config';
+import { config } from './config';
 import { environment } from './environments/environment';
 
 if (window) {

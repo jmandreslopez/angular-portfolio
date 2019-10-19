@@ -1,0 +1,99 @@
+
+// ==== Background ====
+
+// Background Cover
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-size-cover {
+    background-size: cover;
+}
+
+.bg-size-contain {
+    background-size: contain;
+}
+
+.bg-position-center {
+    background-position: center;
+}
+
+.bg-position-center-top {
+    background-position: center top;
+}
+
+.bg-position-50-50 {
+    background-position: 50% 50%;
+}
+
+.bg-repeat-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-attachment-fixed {
+    background-attachment: fixed;
+}
+
+// ==== Buttons ====
+
+.btn-facebook {
+    @include button-variant($brand-facebook, $brand-facebook);
+}
+
+.btn-twitter {
+    @include button-variant($brand-twitter, $brand-twitter);
+}
+
+.btn-linkedin {
+    @include button-variant($brand-linkedin, $brand-linkedin);
+}
+
+// ==== Position ====
+
+.top-0 {
+    top: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+// ==== Misc ====
+
+.is-clickable {
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+
+    &:hover {
+        cursor: not-allowed;
+    }
+}
+
+@for $i from 0 through 1000 {
+    .z-index-#{$i} {
+        z-index: $i !important;
+    }
+}
+
+.z-index-max {
+    z-index: 9999 !important;
+}
+
+@for $i from 0 through 9 {
+    .opacity-#{$i} {
+        opacity: $i / 10;
+    }
+}
