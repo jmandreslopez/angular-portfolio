@@ -1,8 +1,8 @@
 
 /**
- * Ladda Config
+ * Ladda Options
  */
-export const LaddaConfig: any = {
+export const LaddaOptions: any = {
     style: 'slide-down',
     spinnerLines: 100,
 };

@@ -1,0 +1,8 @@
+@import 'imports/main';
+
+:host {
+    display: block;
+    background: $gray-900;
+    color: white;
+    height: 500px;
+}

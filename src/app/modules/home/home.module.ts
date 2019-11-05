@@ -6,6 +6,10 @@ import { HomeRoutingModule } from './home-routing.module';
 
 // Components
 import { HomeComponent } from './components';
+import { HomeAboutComponent } from './components';
+import { HomeBackgroundComponent } from './components';
+import { HomeContactComponent } from './components';
+import { HomeTestimonialsComponent } from './components';
 
 @NgModule({
     imports: [
@@ -14,6 +18,10 @@ import { HomeComponent } from './components';
     ],
     declarations: [
         HomeComponent,
+        HomeAboutComponent,
+        HomeBackgroundComponent,
+        HomeContactComponent,
+        HomeTestimonialsComponent,
     ],
     providers: []
 })

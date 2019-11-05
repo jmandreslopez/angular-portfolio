@@ -1,0 +1,26 @@
+@import 'imports/main';
+
+:host {
+    display: block;
+    background: $gray-300;
+    color: white;
+    height: 500px;
+}
+
+.select {
+    position: absolute;
+    opacity: 1;
+    color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    &::selection {
+        color: #fff;
+        background: #db3a9e;
+        // -webkit-background-clip: unset;
+        -webkit-text-fill-color: #fff;
+    }
+}

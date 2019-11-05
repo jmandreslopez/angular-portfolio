@@ -40,7 +40,10 @@
               "node_modules/ladda/dist/ladda.min.css",
               "src/styles/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "develop": {

@@ -1,6 +1,20 @@
 
-<!-- Normal Router Outlet -->
-<router-outlet></router-outlet>
+<main role="main">
+
+    <!-- Header -->
+    <header class="region--header sticky-top" [class.sticky-top]="configService.isLayoutHeaderSticky()">
+        <jma-header class="header"></jma-header>
+    </header>
+
+    <!-- Outlet -->
+    <router-outlet class="outlet d-block"></router-outlet>
+
+    <!-- Footer -->
+    <footer class="region--footer">
+        <jma-footer class="footer d-block py-4"></jma-footer>
+    </footer>
+
+</main>
 
 <!-- Global Elements -->
 <jma-social-menu></jma-social-menu>

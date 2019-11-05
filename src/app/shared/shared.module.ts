@@ -13,10 +13,12 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgPipesModule } from 'ngx-pipes';
 
 // Components
+import { FooterComponent } from './components';
+import { HeaderComponent } from './components';
 import { SocialMenuComponent } from './components';
 
-// Configs
-import { LaddaConfig } from '@app/configs';
+// Options
+import { LaddaOptions } from '@app/options';
 
 @NgModule({
     imports: [
@@ -28,13 +30,15 @@ import { LaddaConfig } from '@app/configs';
 
         // Vendors
         NgxErrorsModule, // @hackages/ngxerrors
-        LaddaModule.forRoot(LaddaConfig), // angular2-ladda
+        LaddaModule.forRoot(LaddaOptions), // angular2-ladda
         Angulartics2Module.forRoot(), // angulartics2
         NgxPageScrollModule, // ngx-page-scroll
         NgxPageScrollCoreModule.forRoot(), // ngx-page-scroll-core
         NgPipesModule, // ngx-pipes
     ],
     declarations: [
+        FooterComponent,
+        HeaderComponent,
         SocialMenuComponent,
     ],
     exports: [
@@ -52,6 +56,8 @@ import { LaddaConfig } from '@app/configs';
         NgPipesModule, // ngx-pipes
 
         // Components
+        FooterComponent,
+        HeaderComponent,
         SocialMenuComponent,
     ],
     providers: []

@@ -1,0 +1,15 @@
+@import 'imports/main';
+
+:host {
+    height: 4em;
+}
+
+.btn-social {
+    width: 5em;
+    height: 4em;
+    transition: transform 400ms ease;
+
+    &:hover {
+        transform: translate3d(-1em, 0, 0);
+    }
+}

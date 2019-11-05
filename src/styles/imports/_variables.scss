@@ -1,6 +1,23 @@
-// ===== Custom Variables =====
+// ===== Variables =====
 
 // Brand Colors
-$brand-facebook: #3b5998;
-$brand-twitter: #1da1f2;
-$brand-linkedin: #0077b5;
+$brand-color-facebook:      #3b5998;
+$brand-color-twitter:       #1da1f2;
+$brand-color-linkedin:      #0077b5;
+$brand-color-github:        #333333;
+$brand-color-instagram-1:   #fdf497;
+$brand-color-instagram-2:   #fd5949;
+$brand-color-instagram-3:   #d6249f;
+$brand-color-instagram-4:   #285aeb;
+
+$theme-colors: (
+    "facebook":     $brand-color-facebook,
+    "twitter":      $brand-color-twitter,
+    "linkedin":     $brand-color-linkedin,
+    "github":       $brand-color-github,
+);
+
+// Options
+$enable-shadows:        false;
+$enable-gradients:      false;
+$enable-transitions:    true;

@@ -27,4 +27,18 @@ export class ConfigService {
         throw new Error(`Missing key - '${key}'`);
     }
 
+    //****************************************************************************************
+    // CHECKOUT
+    //****************************************************************************************
+
+    // REQUIRED
+    public getLayoutHeaderOffset(): number {
+        return this.default('layout_header_offset', undefined);
+    }
+
+    // REQUIRED
+    public isLayoutHeaderSticky(): boolean {
+        return this.default('layout_header_sticky', undefined);
+    }
+
 }

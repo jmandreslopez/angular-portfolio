@@ -1,3 +1,4 @@
+// ===== Utilities =====
 
 // ==== Background ====
 
@@ -39,16 +40,54 @@
 // ==== Buttons ====
 
 .btn-facebook {
-    @include button-variant($brand-facebook, $brand-facebook);
+    &.no-hover {
+        background-color: $brand-color-facebook;
+
+        &:hover {
+            background-color: $brand-color-facebook;
+            border-color: $brand-color-facebook;
+        }
+    }
 }
 
 .btn-twitter {
-    @include button-variant($brand-twitter, $brand-twitter);
+    &.no-hover {
+        background-color: $brand-color-twitter;
+
+        &:hover {
+            background-color: $brand-color-twitter;
+            border-color: $brand-color-twitter;
+        }
+    }
 }
 
 .btn-linkedin {
-    @include button-variant($brand-linkedin, $brand-linkedin);
+    &.no-hover {
+        background-color: $brand-color-linkedin;
+
+        &:hover {
+            background-color: $brand-color-linkedin;
+            border-color: $brand-color-linkedin;
+        }
+    }
 }
+
+.btn-github {
+    &.no-hover {
+        background-color: $brand-color-github;
+
+        &:hover {
+            background-color: $brand-color-github;
+            border-color: $brand-color-github;
+        }
+    }
+}
+
+// Instagram logo is based on a gradient
+.btn-instagram {
+    background: radial-gradient(circle at 30% 107%, $brand-color-instagram-1 0%, $brand-color-instagram-1 5%, $brand-color-instagram-2 45%, $brand-color-instagram-3 60%, $brand-color-instagram-4 90%);
+}
+
 
 // ==== Position ====
 
