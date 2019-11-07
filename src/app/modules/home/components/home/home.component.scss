@@ -6,3 +6,26 @@
 //     // margin-top: .5rem;
 //     overflow: auto;
 // }
+
+.section {
+    display: block;
+    color: white;
+    // height: 500px;
+    height: 100vh;
+}
+
+.section--about {
+    background: $gray-300;
+}
+
+.section--background {
+    background: $gray-500;
+}
+
+.section--testimonials {
+    background: $gray-700;
+}
+
+.section--contact {
+    background: $gray-900;
+}

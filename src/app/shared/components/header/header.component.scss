@@ -5,3 +5,7 @@
     transition: all 0.15s ease-in-out;
     box-shadow: 0 0.5em 1em rgba($black, 0.15);
 }
+
+.active {
+    font-weight: bold;
+}

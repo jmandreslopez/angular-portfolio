@@ -45,6 +45,7 @@
     "pubnub-angular2": "^1.3.2",
     "rxjs": "^6.5.3",
     "rxjs-compat": "^6.5.3",
+    "simple-scrollspy": "^2.0.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },

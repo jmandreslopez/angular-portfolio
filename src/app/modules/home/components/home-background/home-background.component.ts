@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
     styleUrls: ['./home-background.component.scss']
 })
 export class HomeBackgroundComponent {
-    //
+
+    public onIntersection({ target, visible }: { target: Element; visible: boolean }): void {
+        console.log('HomeBackgroundComponent: ', visible);
+    }
+
 }

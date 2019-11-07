@@ -1,4 +1,4 @@
 export * from './elements';
 
 // Module
-export * from './layouts.module';
+export * from './directives.module';

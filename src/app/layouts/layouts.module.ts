@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '@app/shared/shared.module';
 
 // Declarations
-import { BlankLayoutComponent } from './blank-layout';
-import { NormalLayoutComponent } from './normal-layout';
+import { BlankLayoutComponent } from './elements';
+import { NormalLayoutComponent } from './elements';
 
 @NgModule({
     imports: [
