@@ -34,7 +34,7 @@
     "angular2-ladda": "^2.0.2",
     "angulartics2": "^8.1.0",
     "bootstrap": "^4.3.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "ngx-bootstrap": "^5.2.0",
     "ngx-page-scroll": "^7.0.0",
